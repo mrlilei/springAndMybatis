@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE configuration PUBLIC "-//ibatis.apache.org//DTD Config 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-config.dtd">
+<configuration>
+	<environments default="environment">
+		<environment id="environment">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.ibm.db2.jcc.DB2Driver" />
+				<property name="url"
+					value="jdbc:db2://192.168.10.13:50000/develop" />
+				<property name="username" value="db2inst1" />
+				<property name="password" value="db2inst2" />
+			</dataSource>
+		</environment>
+	</environments>
+	<!-- <mappers>
+		<mapper resource="User.xml" />
+	</mappers> -->
+</configuration>
